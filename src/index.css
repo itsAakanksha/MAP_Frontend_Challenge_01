@@ -2,40 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.skeleton{
+/* Skeleton loading animation */
+.skeleton {
   opacity: 0.6;
-  animation: skeleton-loading 1s linear infinite alternate  ;
+  animation: skeleton-loading 1s linear infinite alternate;
 }
 
+/* Keyframes for skeleton loading animation */
 @keyframes skeleton-loading {
-  0%{
-    background-color: hsl(200,20%,70%);
-
+  0% {
+    background-color: hsl(200, 20%, 70%);
   }
 
-  100%{
-    background-color: hsl(200,20%,95%);
-
+  100% {
+    background-color: hsl(200, 20%, 95%);
   }
 }
 
-
-.skeleton-text{
+/* Skeleton text styling */
+.skeleton-text {
   width: 100%;
   height: 0.5rem;
   border-radius: 0.125rem;
   margin-bottom: 0.25rem;
 }
 
-.skeleton-text:last-child{
-    margin-bottom: 0;
-    width: 80%;
+/* Styling for the last skeleton text element */
+.skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 80%;
 }
 
+/* Custom box shadow for card component */
 .custom-box-shadow {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 
               0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
-
 
